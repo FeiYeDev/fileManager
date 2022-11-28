@@ -30,7 +30,7 @@ export default function generateTree() {
     },
     3: {
       id: 3,
-      filePaths: [],
+      filePaths: ['Happy New Years.mp3','you rise me up.mp3'],
       folderName: 'R&B',
       childIds: [],
       parentIds: [0,2]
