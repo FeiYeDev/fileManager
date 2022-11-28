@@ -49,9 +49,9 @@ export class Node extends Component {
                     className={id == selectedId ? 'folder-clicked' : 'folder-noClick'}
                 >
                     {
-                        parentIds.map(item => {
+                        parentIds.map((item,index) => {
                             return (
-                                <span className={id === 0 ? null : 'folder-padding'}></span>
+                                <span key={index} className={id === 0 ? null : 'folder-padding'}></span>
                             )
                         })
                     }
