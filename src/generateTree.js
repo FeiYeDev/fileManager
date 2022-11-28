@@ -1,41 +1,50 @@
 export default function generateTree() {
-  let tree = {
-    selected: {
-      id: 0,
-      filePaths: ['http:xxxxxxxx.png'],
-      folderName: 'Files',
-      childIds: [],
-      parentIds: []
-    },
-    0: {
-      id: 0,
-      filePaths: ['http:xxxxxxxx.png'],
-      folderName: 'Files',
-      childIds: [1,2],
-      parentIds: []
-    },
-    1: {
-      id: 1,
-      filePaths: ['http:ssssssss.png'],
-      folderName: 'Documents',
-      childIds: [],
-      parentIds: [0]
-    },
-    2: {
-      id: 2,
-      filePaths: ['http:fffffffff.png'],
-      folderName: 'Music',
-      childIds: [3],
-      parentIds: [0]
-    },
-    3: {
-      id: 3,
-      filePaths: ['Happy New Years.mp3','you rise me up.mp3'],
-      folderName: 'R&B',
-      childIds: [],
-      parentIds: [0,2]
+    let tree = {
+        0: {
+            id: 0,
+            filePaths: [
+                'http:xxxxxxxx.png'
+            ],
+            folderName: 'Files',
+            childIds: [
+                'new_0',
+                'new_1'
+            ],
+            parentIds: []
+        },
+        selected: {
+            id: 0,
+            filePaths: [
+                'http:xxxxxxxx.png'
+            ],
+            folderName: 'Files',
+            childIds: [
+                'new_0',
+                'new_1'
+            ],
+            parentIds: []
+        },
+        new_0: {
+            id: 'new_0',
+            folderName: 'Documents',
+            parentIds: [
+                0
+            ],
+            filePaths: [],
+            childIds: []
+        },
+        new_1: {
+            id: 'new_1',
+            folderName: 'Music',
+            parentIds: [
+                0
+            ],
+            filePaths: [
+                'xxxx.mp3'
+            ],
+            childIds: []
+        }
     }
-  }
 
-  return tree
+    return tree
 }
