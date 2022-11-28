@@ -33,7 +33,7 @@ export default function generateTree() {
       filePaths: [],
       folderName: 'R&B',
       childIds: [],
-      parentIds: [2]
+      parentIds: [0,2]
     }
   }
 
