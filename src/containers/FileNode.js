@@ -49,9 +49,9 @@ export class Node extends Component {
             <div>
                 <Breadcrumb style={{padding:10,borderBottom:'1px solid #f0f0f0'}} separator=">">
                   {
-                    brandNameList.map(item => {
+                    brandNameList.map((item, index) => {
                         return (
-                            <Breadcrumb.Item className='bread-item' onClick={() => {this.handleChildSelect(item.id)}}>{item.name}</Breadcrumb.Item>
+                            <Breadcrumb.Item key={index} className='bread-item' onClick={() => {this.handleChildSelect(item.id)}}>{item.name}</Breadcrumb.Item>
                         )
                     })
                   }
